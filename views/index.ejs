@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+  <h2>A simple GET form</h2>
+    <form action="/welcome" method="get">
+      <input type="text" name="username" placeholder="Your name">
+      <input type="submit" value="Submit">
+    </form>
+
+  <h2>A simple POST form</h2>
+    <form action="/welcome" method="post">
+      <input type="text" name="username" placeholder="Your name">
+      <input type="submit" value="Submit">
+    </form>
+
+  <h2>Display all users, JSON response</h2>
+  <a href="/all">All users</a>
+
+    <h2>Another page</h2>
+    <a href="/users/hello">Another page</a>
+
+  </body>
+</html>
