@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
+// our data model - later will be replaced by a database
 let allUsers = [];
 let counter = 0;
 
